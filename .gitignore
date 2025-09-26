@@ -1,34 +1,66 @@
-# Gradle files
+# Gradle/Build
 .gradle/
 build/
+**/build/
 
-# Local configuration file (sdk path, etc)
+# Local configuration (SDK path)
 local.properties
 
-# Log/OS Files
-*.log
+# Gradle wrapper (PHẢI commit these normally; keep here commented if you want to ensure not ignored)
+# !gradle/wrapper/**
+# !gradlew
+# !gradlew.bat
 
-# Android Studio generated files and folders
+# Android Studio
+/.idea/
+/*.iml
+**/*.iml
 captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+/.externalNativeBuild/
+/.cxx/
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+# Build outputs
+*.apk
+*.ap_
+*.aab
+output-metadata.json
 
 # Keystore files
 *.jks
 *.keystore
 
-# Google Services (e.g. APIs or Firebase)
+# Google services / secrets
 google-services.json
+*.env
 
-# Android Profiling
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Android profiling
 *.hprof
+
+# IntelliJ misc
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# NDK
+obj/
+*.so
+
+# JetBrains local history
+.idea/*workspace.xml
+.idea/*tasks.xml
+.idea/dictionaries
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+
+# Optional: exclude user-specific run configs
+.idea/runConfigurations/
+
+# Ignored by default: node_modules (if using node)
+node_modules/
